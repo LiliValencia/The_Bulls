@@ -1,0 +1,9 @@
+body{
+	background-image: url(Chicago.jpg);
+	background-size: 1366px 768px;
+
+	 background-repeat: no-repeat;
+}
+fieldset{
+	border: none !important;
+}

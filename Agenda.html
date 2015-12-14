@@ -1,0 +1,53 @@
+<html>
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	  <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+	  <script type="text/javascript" src="engine1/jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/fullcalendar.css">
+	<title>Agenda</title>
+</head>
+<body>
+	<div class="container">
+	<header>
+	<ul class="nav nav-tabs">
+	  <li role="presentation"><a href="Home.html">Home</a></li>
+	  <li role="presentation"><a href="Registrar.html">Registrar</a></li>
+	  <li role="presentation"><a href="Perfil.html">Perfil</a></li>
+	  <li role="presentation"><a href="Tarifa.html">Tarifa</a></li>
+	  <li role="presentation" class="active"><a href="Agenda.html">Agenda</a></li>
+	  <li class="pull-right" role="Ha cerca de"><a href="Ha cerca de.html">Ha cerca de</a></li>
+  	  <li class="pull-right" role="Mapa de navegación"><a href="Mapa de navegación.html">Mapa de navegación</a></li>
+  	  <li class="pull-right" role="Ayuda"><a href="Ayuda.html">Ayuda</a></li>
+	</header>
+
+<div id="calendario" style="width:700px; heigth: 700px;"></div>
+
+<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="js/lib/moment.min.js"></script>
+<script type="text/javascript" src="js/fullcalendar.js"></script>
+<script type="text/javascript" src="js/Eventos.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#calendario').fullCalendar({
+			events: [
+			 {
+					 title  : 'hola',
+					 start  : '2015-12-01'
+			 },
+			 {
+					 title  : 'lili',
+					 start  : '2015-12-05',
+					 end    : '2015-12-07'
+			 },
+			 {
+					 title  : 'event3',
+					 start  : '2010-01-09T12:30:00',
+					 allDay : false // will make the time show
+			 }
+	 ]
+		});
+	});
+</script>
+</body>
+</html>
